@@ -6,7 +6,7 @@ html, body {
 
 html::-webkit-scrollbar, 
 body::-webkit-scrollbar {
-    display: none; /* Hides scrollbar in Chrome, Safari, and Edge */
+    display: none; /* Hides scrollbar in Chrome, Safari, and Edge */
 }
 .navbar {
     width: 100%;
