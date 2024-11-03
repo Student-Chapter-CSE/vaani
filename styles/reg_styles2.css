@@ -1,3 +1,13 @@
+html, body {
+    overflow-y: scroll; /* Enables vertical scrolling */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome, Safari, and Edge */
+}
 .navbar {
     width: 100%;
     font-family: Calibri, sans-serif;

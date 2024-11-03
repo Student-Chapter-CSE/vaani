@@ -1,56 +1,81 @@
-#aot {
-    align-items: start;
-    height: 80px;
+html, body {
+    overflow-y: scroll; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+    display: none; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    padding-top: 60px; /* Set this equal to the navbar height */
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 .navbar {
-    width: 100%;
-    font-family: Calibri, sans-serif;
+    font-family: 'Calibri', sans-serif;
     padding: 0 15px;
     height: 60px;
-    background-color: #ffffff; /* Use a background for visibility */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    position: sticky; /* Sticky positioning */
-    top: 0; /* Fixed to the top */
-    z-index: 1000; /* Ensure it appears above other content */
-    display: flex;
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Space out items */
-    margin-bottom: 0px; /* Space below the navbar */
+    background-color: #f9f9f9; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6); 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
 }
 
-/* List styles */
 .navdiv {
     display: flex;
-    align-items: center;
+    align-items: center; 
     justify-content: space-between;
-    width: 100%;
+}
+
+.clg img {
+    height: 70px; 
+    width: auto; 
+}
+
+ul {
+    display: flex; 
+    flex-wrap: nowrap; 
+    margin: 0; 
+    padding: 0px; 
 }
 
 li {
     list-style: none;
-    display: inline-block;
+    margin-right: 50px; 
+}
+
+li:last-child {
+    margin-right: 50px; 
 }
 
 li a {
     color: #022B7D;
-    font-size: 24px; /* Use a consistent font size */
+    font-size: 24px; 
     font-weight: bold;
-    margin-right: 25px; /* Space between links */
     text-decoration: none;
     position: relative;
-    padding-bottom: 5px; /* Space for underline effect */
+    padding-bottom: 5px;
+    transition: color 0.3s; 
 }
 
-/* Hover Effects */
-li a:hover, li a:focus, li a.active {
+li a:hover,
+li a:focus,
+li a.active {
     color: #FFCC00;
 }
 
@@ -65,13 +90,10 @@ li a::after {
     transition: width 0.3s;
 }
 
-li a:hover::after, li a:focus::after, li a.active::after {
-    width: 100%; /* Full underline on hover */
-}
-
-#aot {
-    align-items: start;
-    height: 80px;
+li a:hover::after,
+li a:focus::after,
+li a.active::after {
+    width: 100%;
 }
 
 #aicte {
