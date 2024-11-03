@@ -40,23 +40,23 @@ body {
     width: auto; 
 }
 
-ul {
+.navbar .navdiv ul {
     display: flex; 
     flex-wrap: nowrap; 
     margin: 0; 
     padding: 0px; 
 }
 
-li {
+.navbar .navdiv li {
     list-style: none;
     margin-right: 50px; 
 }
 
-li:last-child {
+.navbar .navdiv li:last-child {
     margin-right: 50px; 
 }
 
-li a {
+.navbar .navdiv li a {
     color: #022B7D;
     font-size: 24px; 
     font-weight: bold;
@@ -66,13 +66,13 @@ li a {
     transition: color 0.3s; 
 }
 
-li a:hover,
-li a:focus,
-li a.active {
+.navbar .navdiv li a:hover,
+.navbar .navdiv li a:focus,
+.navbar .navdiv li a.active {
     color: #FFCC00;
 }
 
-li a::after {
+.navbar .navdiv li a::after {
     content: "";
     position: absolute;
     width: 0;
@@ -83,9 +83,9 @@ li a::after {
     transition: width 0.3s;
 }
 
-li a:hover::after,
-li a:focus::after,
-li a.active::after {
+.navbar .navdiv li a:hover::after,
+.navbar .navdiv li a:focus::after,
+.navbar .navdiv li a.active::after {
     width: 100%;
 }
 
