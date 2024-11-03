@@ -246,22 +246,28 @@ body {
 
 .container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between; /* Adds space between columns */
-    align-items: flex-start; /* Aligns content at the top */
-    gap: 20px;
-    width: 90%;
-    max-width: 1200px;
+    flex-direction: row; /* Keep columns side by side */
+    justify-content: flex-start; /* Align columns to the left */
+    align-items: flex-start; /* Align items at the top */
+    width: 100%; /* Full width of the page */
     padding: 20px;
     border-radius: 10px;
 }
 
-.right-column {
-    padding-left: 20px; /* Adjusted padding for better spacing */
+.left-column {
+    flex: 1; /* Allow this column to grow */
+    padding: 20px; /* Add padding as needed */
 }
 
-.left-column {
-    padding-right: 20px;
+.right-column {
+    width: 300px; /* Set a fixed width or any value you need */
+    margin-left: auto; /* Push this column to the right */
+}
+.left-column, .right-column {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    gap: 30px; /* Increased gap between sections */
+    padding: 20px;
 }
 
 .left-column .header {
@@ -281,12 +287,6 @@ body {
     margin-top: 87px;
 }   
 
-.left-column, .right-column {
-    display: flex;
-    flex-direction: column; /* Stack sections vertically */
-    gap: 20px; /* Add space between the sections */
-    padding: 20px;
-}
 
 .partition {
     display: flex; /* Ensure columns are side by side */
@@ -355,3 +355,83 @@ strong {
 ul{
     list-style: none;
 }
+
+.right-column .header h2 p {
+    color: #022B7D;
+    font-weight: bold;
+}
+
+.right-column .header {
+    margin-left: 30px; /* Removed margin for better alignment */
+}
+/* Media Queries */
+/* Media Queries for Responsive Design */
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .partition {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left, .right {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .left h1, .right h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .item p, .event-title {
+        font-size: 0.9em;
+    }
+
+    .link-box {
+        width: 100%;
+    }
+    .container {
+        flex-direction: column; /* Stacks columns vertically */
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem; /* Smaller font size for headers */
+    }
+
+    h2 {
+        font-size: 1.1rem; /* Smaller font size for sub-headers */
+    }
+}
+
+@media (max-width: 480px) {
+    .left h1, .right h2 {
+        font-size: 1.5rem;
+    }
+
+    .item p {
+        font-size: 0.8em;
+    }
+
+    .link-text, .event-title {
+        font-size: 0.9em;
+    }
+
+    .register-btn {
+        width: 100%;
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .partition, .container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .left, .right {
+        width: 100%;
+    }
+}
+
