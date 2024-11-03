@@ -255,10 +255,6 @@ li a.active::after {
     padding: 0;
     box-sizing: border-box;
 }
-/* next file*/
-
-
-
 .container2 {
     max-width: 100%;
     margin: 0 auto;
@@ -333,7 +329,7 @@ li a.active::after {
     }
 
     .about-section2 p,
-    .about-section2 ul li {
+    #courses li {
         font-size: 1em; 
     }
 }
@@ -344,7 +340,7 @@ li a.active::after {
     }
 
     .about-section2 p,
-    .about-section2 ul li {
+    #courses li {
         font-size: 0.95em;
     }
     .image-container2 img {
@@ -358,7 +354,7 @@ li a.active::after {
     }
 
     .about-section2 p,
-    .about-section2 ul li {
+    #courses li {
         font-size: 0.85em;
     }
 
