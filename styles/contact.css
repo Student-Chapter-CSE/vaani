@@ -234,9 +234,10 @@ li a.active::after {
 
 .contact-info span {
     color: #1f4e98;
-    font-weight: bold;
 }
-
+.contact-info strong {
+    color: #1f4e98;
+}
 .footer {
     display: flex;
     justify-content: space-around;

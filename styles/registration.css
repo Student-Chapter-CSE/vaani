@@ -1,11 +1,4 @@
 /* Base Styles */
-html, body {
-    
-
-    -ms-overflow-style: none; 
-}
-
-
 body {
     margin: 0;
     padding-top: 60px; /* Navbar height */
